@@ -4,4 +4,5 @@ $a = "Ik heb niet gefaald";
 $b = "die niet werken";
 $c = "10000";
 
-$volledigezin = "$a. $b $c";
+
+echo $a, ". ik heb alleen ",$c ," manieren gevonden ", $b ;
