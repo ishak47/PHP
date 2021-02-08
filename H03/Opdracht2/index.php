@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="stlyle.css" rel="stylesheet">
+<title>
+</title>
+</head>
+</html>
+
+
+
+
+
+<?php
+
+for ($i = 0; $i <=9; $i++){
+    for ($j = 0; $j < $i; $j++){
+            echo "*";
+    }
+    echo "*<br>";
+}
