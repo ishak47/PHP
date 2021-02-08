@@ -14,3 +14,5 @@ if ($leeftijd <=12){
 if ($leeftijd <3) {
     $prijs = 0;
 }
+
+echo $prijs;
