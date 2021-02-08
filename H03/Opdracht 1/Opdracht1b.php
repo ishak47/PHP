@@ -1,3 +1,0 @@
-<?php
-
-//$bomen = array("im")
