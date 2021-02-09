@@ -1,0 +1,12 @@
+table{
+    float: left;
+}
+
+td{
+    height: 50px;
+}
+
+img {
+    top: 61px;
+        position: relative;
+}

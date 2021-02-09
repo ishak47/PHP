@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title></title>
+    <title></title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -12,12 +13,20 @@ $deWaterBuffels = 32;
 $plonsmderin = 11;
 $Bommetje = 23;
 
+ $clubs = array("deSpartelkuikens" => $deSpartelKuikens, "deWaterBuffels" => $deWaterBuffels, "plonsmderin" => $plonsmderin, "Bommetje" => $Bommetje);
 
 ?>
 
-<h2>Zwemclubs</h2>
 
 <table border="1px solid black ">
+    <tr>
+        <td>
+             zwemclubs
+        </td>
+        <td colspan="2">
+            aantal leden
+        </td>
+    </tr>
     <tr>
         <td>
             de spartelkuikens
@@ -53,3 +62,13 @@ $Bommetje = 23;
 </table>
 </body>
 </html>
+
+<?php
+foreach ( $clubs as $leden) {
+    for ($i = 0; $i <= $leden; $i++) {
+        echo "<img src= zwemmer.png>";
+        $i = $i + 5;
+    }
+    echo "<br>";
+}
+?>
