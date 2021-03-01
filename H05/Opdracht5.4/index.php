@@ -3,7 +3,7 @@ $aanmeldingen = array("piet@worldonline.nl" => "doetje123", "klaas@carpets.nl" =
 foreach ($aanmeldingen as $email => $wachtwoord) {
     if ($_POST["email"] == $email && $_POST["password"] == $wachtwoord) {
         echo "Welkom!";
-    } else if ($_POST["email"] !== $email && $_POST["password"] !==
+    } elseif ($_POST["email"] !== $email && $_POST["password"] !==
         $wachtwoord) {
         echo "uw ingevoerde inloggevens kloppen niet" . "<br>";
         echo "<a href='index.html'>terug naar het inlog scherm</a>";
