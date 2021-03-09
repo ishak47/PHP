@@ -21,11 +21,11 @@ foreach ($row as $rows) {
     if ($rows['email'] == $email && $rows['wachtwoord'] == $wachtwoord) {
         echo 'WELKOM!';
         $inloggen = true;
+    } elseif ($inloggen == false) {
+        echo 'uw gegevens kloppen niet <br>';
+        echo '<a href="index.html">klik hier om terug te gaan naar het formulier</a> <br>';
     }
 }
 
-if ($inloggen == false) {
-    echo 'uw gegevens kloppen niet <br>';
-    echo '<a href="index.html">klik hier om terug te gaan naar het formulier</a> <br>';
-}
+
 ?>
