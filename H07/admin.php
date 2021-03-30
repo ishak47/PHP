@@ -1,10 +1,9 @@
 <?php
-    session_start();
+session_start();
 
-if (isset($_SESSION["user"]) && $_SESSION["user"]["rol"] == "Administrator") {
-    echo "<h1>Welkom ".$_SESSION["user"]. " op het admingedeelte van de website";
-    echo "<p><a href='index.php'>Loginscherm</a></p>";
+if (isset($_SESSION["gebruiker"]) && $_SESSION["gebruiker"]["rol"] == "Administrator") {
+    echo "<h1>Welkom ".$_SESSION["gebruiker"]["naam"]." op het admingedeelte van de website </h1>";
+    echo "<p><a href='login.php'>Loginscherm</a></p>";
 } else {
     header('location: login.php');
 }
-?>

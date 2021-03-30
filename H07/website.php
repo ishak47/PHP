@@ -1,10 +1,8 @@
 <?php
+    session_start();
 
-
-session_start();
-
-if (isset($_SESSION["user"])) {
-    echo "<h1>Welkom ".$_SESSION["user"]["naam"]. " op de website!</h1>";
+if (isset($_SESSION["gebruiker"])) {
+    echo "<h1>Welkom ".$_SESSION["gebruiker"]["naam"]. " op de website!</h1>";
 } else {
     header('location: login.php');
 }
