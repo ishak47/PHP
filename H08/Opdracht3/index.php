@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <?php
 
 include_once ("Autooverzicht.php");
@@ -10,7 +11,7 @@ $maxprijs = isset($_GET["max-prijs"]) ? $_GET["max-prijs"] : 99999999999999;
 <head>
     <title>MR Wheely</title>
     <meta charset="UTF-8">
-    <link href="style.css" rel="stylesheet">
+    <link href="kleur.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -18,26 +19,25 @@ $maxprijs = isset($_GET["max-prijs"]) ? $_GET["max-prijs"] : 99999999999999;
     <img class="header" src="img/wheely_header.jpg" alt="header-img">
     <form action="index.php" method="get">
         <label>
-            Merk: <br>
-            <select id="merk" name="merk">
-                <option value="">merken</option>
+            <label class="titel">Merk: </label><br>
+            <select class="vorm" id="merk" name="merk">
+                <option value="">--Alle Merken--</option>
                 <option value="audi">Audi</option>
                 <option value='ferrari'>ferrari</option>
                 <option value="fiat">fiat</option>
                 <option value="mercedes">mercedes</option>
                 <option value="opel">opel</option>
                 <option value="volkswagen">volkswagen</option>
-            </select>
+            </select><br>
         </label>
         <label>
-            Minimale prijs: <br>
-            <input type="number" id="min-prijs" name="min-prijs">
+            <label class="titel"> Minimale prijs:</label> <br>
+            <input class="vorm" type="number" id="min-prijs" name="min-prijs"><br>
         </label>
         <label>
-            Maximale prijs: <br>
-            <input type="number" id="max-prijs" name="max-prijs">
+            <label class="titel">Maximale prijs:</label> <br>
+            <input class="vorm" type="number" id="max-prijs" name="max-prijs"><br>
         </label>
         <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
     </form>
-
+</html>
