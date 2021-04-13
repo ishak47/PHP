@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <?php
 
-include_once ("Autooverzicht.php");
+include_once ("auto.php");
 
-$merk = isset($_GET["merk"]) ? $_GET["merk"] : "";
 $minprijs = isset($_GET["min-prijs"]) ? $_GET["min-prijs"] : 0;
 $maxprijs = isset($_GET["max-prijs"]) ? $_GET["max-prijs"] : 99999999999999;
+
+
 ?>
 <html lang="en">
 <head>
@@ -41,3 +42,16 @@ $maxprijs = isset($_GET["max-prijs"]) ? $_GET["max-prijs"] : 99999999999999;
         <button type="submit">Submit</button>
     </form>
 </html>
+
+<?php
+include_once("Autooverzicht.php");
+
+$autoos = new Autooverzicht();
+
+foreach ($autoos->getAutoLijst() as $auto){
+    if ($auto->getPrijs() > $minprijs && $auto->getPrijs() < $maxprijs){
+        echo $auto->getMerk() . '-' . $auto->getPrijs() . '<br>';
+        echo '<img src="'. $auto->getImageUrl().'" alt=""><br>';
+    }
+}
+?>
