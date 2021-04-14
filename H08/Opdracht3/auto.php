@@ -9,7 +9,7 @@ class Auto{
     function __construct($merk,$prijs,$image_url){
         $this->merk = $merk;
         $this->prijs = $prijs;
-        $this->$image_url= $image_url;
+        $this->image_url= $image_url;
     }
 
     function getMerk() {
@@ -24,15 +24,15 @@ class Auto{
         return $this->image_url;
     }
 
-//    function setMerk($merk) {
-//        return $this->merk = $merk;
-//    }
-//
-//    function setPrijs($prijs) {
-//        return $this->prijs = $prijs;
-//    }
-//
-//    function setImageUrl() {
-//        return $this->image_url;
-//    }
+    function setMerk($merk) {
+        return $this->merk = $merk;
+    }
+
+    function setPrijs($prijs) {
+        return $this->prijs = $prijs;
+    }
+
+    function setImageUrl() {
+        return $this->image_url;
+    }
 }
