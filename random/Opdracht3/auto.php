@@ -23,16 +23,4 @@ class Auto{
     function getImageUrl() {
         return $this->image_url;
     }
-
-    function setMerk($merk) {
-        return $this->merk = $merk;
-    }
-
-    function setPrijs($prijs) {
-        return $this->prijs = $prijs;
-    }
-
-    function setImageUrl() {
-        return $this->image_url;
-    }
 }

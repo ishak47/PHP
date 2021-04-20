@@ -1,6 +1,6 @@
 <?php
 
-$leeftijd = 15;
+$leeftijd = 1;
 $prijs = 10;
 
 if ($leeftijd >65){

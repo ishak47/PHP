@@ -16,11 +16,11 @@ $maxprijs = isset($_GET["max-prijs"]) ? $_GET["max-prijs"] : 99999999999999;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+<img class="header" src="img/wheely_header.jpg" alt="header-img">
 <div id="wrapper">
-    <img class="header" src="img/wheely_header.jpg" alt="header-img">
     <form action="index.php" method="get">
         <label>
-            <label class="titel">Merk: </label><br>
+            <label>Merk: </label><br>
             <select class="vorm" id="merk" name="merk">
                 <option value="">--Alle Merken--</option>
                 <option value="audi">Audi</option>
@@ -39,10 +39,9 @@ $maxprijs = isset($_GET["max-prijs"]) ? $_GET["max-prijs"] : 99999999999999;
             <label class="titel">Maximale prijs:</label> <br>
             <input class="vorm" type="number" id="max-prijs" name="max-prijs"><br>
         </label>
-        <button type="submit">Submit</button>
+        <button class="button" type="submit">Submit</button>
     </form>
-</html>
-
+<div class="plaatjes">
 <?php
 include_once("Autooverzicht.php");
 
@@ -55,3 +54,5 @@ foreach ($autoos->getAutoLijst() as $auto){
     }
 }
 ?>
+</div>
+</html>
