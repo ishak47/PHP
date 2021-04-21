@@ -22,7 +22,7 @@ $password = '!7?}Mf%hgF+T}2D<';
 $db = 'school';
 
 try {
-    $dbh = new PDO('mysql:host='.$host.';dbname='.$db.';port='.$port , $user,$password);
+    $dbh = new PDO('mysql:host='.$host.';dbname='.$db.';port='.$port , $user = '',$password);
 } catch (PDOException $e){
     echo "ERROR (DEZE)!: " . $e->getMessage();
 }
