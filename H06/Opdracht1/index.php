@@ -17,14 +17,14 @@
 
 $host = 'localhost';
 $port = '3306';
-$user = 'root';
-$password = '';
+$user = 'id16650343_root';
+$password = '!7?}Mf%hgF+T}2D<';
 $db = 'school';
 
 try {
     $dbh = new PDO('mysql:host='.$host.';dbname='.$db.';port='.$port , $user,$password);
 } catch (PDOException $e){
-    echo "ERROR!: " . $e->getMessage();
+    echo "ERROR (DEZE)!: " . $e->getMessage();
 }
 
 $query = "SELECT * from cursist";
@@ -46,7 +46,4 @@ while ($row = $stmt->fetch()){
 </body>
 </html>
 
-<!--$query = "SELECT * from cursist";-->
-<!--$stmt = $dbh->prepare($query) or die("error1");-->
-<!--$stmt->execute() or die("error2");-->
 
