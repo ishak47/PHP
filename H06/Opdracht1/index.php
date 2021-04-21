@@ -18,8 +18,8 @@
 $host = 'localhost';
 $port = '3306';
 $user = 'id16650343_root';
-$password = '!7?}Mf%hgF+T}2D<';
-$db = 'school';
+$password = '/+L8u-@d(wf?<?6q';
+$db = 'id16650343_school';
 
 try {
     $dbh = new PDO('mysql:host='.$host.';dbname='.$db.';port='.$port , $user = '',$password);
