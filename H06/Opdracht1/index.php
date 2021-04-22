@@ -22,7 +22,7 @@ $password = '/+L8u-@d(wf?<?6q';
 $db = 'id16650343_school';
 
 try {
-    $dbh = new PDO('mysql:host='.$host.';dbname='.$db.';port='.$port , $user = '',$password);
+    $dbh = new PDO('mysql:host='.$host.';dbname='.$db.';port='.$port , $user = 'id16650343_root',$password = '/+L8u-@d(wf?<?6q');
 } catch (PDOException $e){
     echo "ERROR (DEZE)!: " . $e->getMessage();
 }
