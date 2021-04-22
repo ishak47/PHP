@@ -39,6 +39,9 @@ while ($row = $stmt->fetch()){
     echo "<td>" . $row['straat'] . "</td>";
     echo "<td>" . $row['postcode'] . "</td>";
     echo "<td>" . $row['plaats'] . "</td>";
+    echo "<td>" . $row['geslacht'] . "</td>";
+    echo "<td>" . $row['geb_datum'] . "</td>";
+
     echo "</tr>";
 }
 ?>
